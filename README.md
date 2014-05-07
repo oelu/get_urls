@@ -1,5 +1,8 @@
 # Get URLS out of web pages
 
+## Requirements
+* Requires python docopt module
+
 ## Usage: 
 
     get_urls.py
