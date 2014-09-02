@@ -2,8 +2,10 @@
 """ get_urls.py
 shows embedded links in websites
 Usage:
-      get_urls.py (-u <url> | --url <url>)
+    get_urls.py (-u <url> | --url <url>)
 
+Example:
+    get_urls.py -u "http://www.google.ch"
 """
 __author__ = 'olivier'
 from docopt import docopt
@@ -17,7 +19,6 @@ def get_website_content(url):
     gets content from website using requests
     """
     print "connecting to: " + url
-    url = "http://" + url
     response = requests.get(url)
     content = response.text
     return content
